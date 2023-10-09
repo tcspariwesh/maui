@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <Slider x:Name="slider" Maximum="200" Minimum="0"/>
+            <Label x:Name="display" Text="{Binding Path=Value}" 
+                   BindingContext="{x:Reference Name=slider}"/>
+            <Entry Keyboard="Telephone" />
+            <Entry Keyboard="Email"  IsSpellCheckEnabled="True"/>
+            <Editor Keyboard="Plain" AutoSize="TextChanges" IsSpellCheckEnabled="True"/>
+            
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
