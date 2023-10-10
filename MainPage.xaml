@@ -8,7 +8,7 @@
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
-            <ListView ItemsSource="{Binding skills}" >
+            <ListView ItemsSource="{Binding skills }" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextCell Text="{Binding  }" />
