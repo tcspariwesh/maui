@@ -8,12 +8,14 @@
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
-            <Slider x:Name="slider" Maximum="200" Minimum="0"/>
-            <Label x:Name="display" Text="{Binding Path=Value}" 
-                   BindingContext="{x:Reference Name=slider}"/>
-            <Entry Keyboard="Telephone" />
-            <Entry Keyboard="Email"  IsSpellCheckEnabled="True"/>
-            <Editor Keyboard="Plain" AutoSize="TextChanges" IsSpellCheckEnabled="True"/>
+            <ListView ItemsSource="{Binding skills}" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding  }" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
             
 
         </VerticalStackLayout>

@@ -3,12 +3,13 @@
     public partial class MainPage : ContentPage
     {
         int count = 0;
-
+        string[] skills;
         public MainPage()
         {
             InitializeComponent();
-           // display.BindingContext = slider;
-         //   display.SetBinding(Label.TextProperty, "Value");
+            skills = new string[] { "Java", "React", "MAUI" };
+            // display.BindingContext = slider;
+            //   display.SetBinding(Label.TextProperty, "Value");
         }
         private void handleCheckbox()
         {
