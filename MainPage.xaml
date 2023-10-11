@@ -9,9 +9,12 @@
             Padding="30,0"
             VerticalOptions="Center">
             <Entry x:Name="firstname"></Entry>
-            <Button Text="Save" Clicked="Button_Clicked"></Button>
-            
-            
+            <Label Text="Male"/>
+            <CheckBox x:Name="gender"  IsChecked="true"></CheckBox>
+            <Button Text="Save" Clicked="Button_Clicked" ></Button>
+            <Button Text="Delete" Clicked="deleteUser" ></Button>
+
+
             <ListView ItemsSource="{Binding skills }" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
