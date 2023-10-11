@@ -8,6 +8,10 @@
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
+            <Entry x:Name="firstname"></Entry>
+            <Button Text="Save" Clicked="Button_Clicked"></Button>
+            
+            
             <ListView ItemsSource="{Binding skills }" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
